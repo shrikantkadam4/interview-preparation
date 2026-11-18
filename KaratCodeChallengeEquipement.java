@@ -33,7 +33,7 @@ import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 import static org.junit.Assert.*;
 
-public class EquipementKaratCodeChallenge {
+public class KaratCodeChallengeEquipement {
 
     enum ReservationStatus {
         ACTIVE,
