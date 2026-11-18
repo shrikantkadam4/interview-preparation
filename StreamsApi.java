@@ -1,0 +1,13 @@
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamsApi{
+    public static void main (String[] args){
+        List<String> colors=List.of("red", "green", "blue");
+        List<String> shapes=Arrays.asList("circle","triangle","square");
+
+        colors.stream()
+                .flatMap(c -> shapes.stream().map(s -> c + " - " + s))
+                .forEach(System.out::println);
+    }
+}
